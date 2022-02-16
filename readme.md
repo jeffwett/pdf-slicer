@@ -4,7 +4,7 @@
 
 ## Sample usage
 ```
-curl http://localhost:5000/pdf_to_jpg_pages?dpi=400 --data PdfRawData
+curl  --request POST --data-binary "@file.pdf" http://localhost:5000/pdf_to_jpgs?dpi=400 
 ```
 
 ## Output
