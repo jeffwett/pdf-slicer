@@ -2,6 +2,11 @@
 - Python API for splitting a PDF into JPG images
 - Can specify DPI
 
+## Sample usage
+```
+curl http://localhost:5000/pdf_to_jpg_pages?dpi=400 --data PdfRawData
+```
+
 ## Output
 ```
 { 
@@ -12,6 +17,8 @@
   ] 
 }
 ```
+- To decode JPG use `base64.b64decode(base64EncodedJPG)` 
+
 
 ## Install instructions (Ubuntu)
 ```
